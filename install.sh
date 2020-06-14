@@ -117,20 +117,32 @@ cd fbi
 pip2 install -r requirements.txt
 clear
 cd ..
-printf "\e[1;31m Herramientas instaladas\n"
-sleep 2
+printf "\e[1;31m ahora instalaremos Seeker herramienta para localizar moviles\n"
+sleep 3
 clear
+git clone https://github.com/thewhiteh4t/seeker
+cd seeker/
+chmod +x install.sh
+bash install.sh
+cd ..
+clear
+printf "\e[1;31m ahora instalaremos Saycheese para entrar en webcams\n"
+sleep 3
+clear
+git clone git clone https://github.com/thelinuxchoice/saycheese
+clear
+printf "\e[1;31m Repositorio Instalado..\n"
 printf "\e[1;31m ultimo paso instalaremos Metasploit en su termux\n"
 sleep 2
 printf "\e[1;31m Esta instalacion puede demorar hasta 20 minutos, si no quiere instalarlo presione ctrl + z para abortar\n"
-sleep 5
+sleep 8
 clear
 pkg install curl -y
 pkg install unstable-repo
 pkg install metasploit
 clear
 printf "\e[1;31m Felicidades Metasploit se instalo correctamente\n"
-sleep 2
+sleep 5
 printf "\e[1;31m para ejecutar ngrok escriba la palabra ngrok en su terminal\n"
 sleep 4
 printf "\e[1;31m para ejecutar Metasploit introdusca msfconsole en la terminal\n"
