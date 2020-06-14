@@ -142,6 +142,7 @@ cd sqliv
 clear
 python2 setup.py -i
 clear
+cd ..
 sleep 2
 printf "\e[1;31m ultimo paso instalaremos Metasploit en su termux\n"
 sleep 2
