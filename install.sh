@@ -132,6 +132,17 @@ clear
 git clone git clone https://github.com/thelinuxchoice/saycheese
 clear
 printf "\e[1;31m Repositorio Instalado..\n"
+sleep 5
+clear
+printf "\e[1;31m Instalando herramienta escaneador de SQLI (SQL injection)\n"
+sleep 3
+clear
+git clone https://github.com/the-robot/sqliv
+cd sqliv
+clear
+python2 setup.py -i
+clear
+sleep 2
 printf "\e[1;31m ultimo paso instalaremos Metasploit en su termux\n"
 sleep 2
 printf "\e[1;31m Esta instalacion puede demorar hasta 20 minutos, si no quiere instalarlo presione ctrl + z para abortar\n"
