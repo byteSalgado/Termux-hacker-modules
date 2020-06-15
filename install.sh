@@ -129,7 +129,7 @@ clear
 printf "\e[1;31m ahora instalaremos Saycheese para entrar en webcams\n"
 sleep 3
 clear
-git clone git clone https://github.com/thelinuxchoice/saycheese
+git clone  https://github.com/thelinuxchoice/saycheese
 clear
 printf "\e[1;31m Repositorio Instalado..\n"
 sleep 5
@@ -162,6 +162,7 @@ sleep 4
 printf "\e[1;31m Si desea ejecutar las demas herramientas vaya a la carpeta tools y dirigase a la herramienta\n"
 sleep 4
 printf "\e[1;31m Gracias por usar este instalador, creado por facundo salgado..\n"
+sleep 5
 clear
 exit
 
